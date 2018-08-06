@@ -6,15 +6,15 @@ Geocode is a one-dimensional location code with several advantages over similar 
 
 This system uses a simple space-filling technique to generate codes using an alphabet of all 36 alphanumeric characters.
 
-It is designed to generate codes for representing locations, and it can be used as a high accuracy postal code system or simply as a system for shortening and representing latitude,longitude values as a single geocode. (the three dimensional version also supports elevation, at a cost of one more byte in the resulting geocode).
+It is designed to generate single geocodes for representing locations, and it can be used as a high accuracy postal code system or simply as a system for shortening latitude,longitude values with minimal loss of location information. (the three dimensional version also supports elevation, at a cost of one more byte in the resulting geocode).
 
 Departing from the overriding techique of many grid-based location codes, geocodes represent points, not areas. Each geocode corresponds to a latitude,longitude pair with accuracy up to the 5th decimal point (i.e. 1 meter)
 
 Latitude,longitude values are combined as two linear curves, then converted to binary numbers and their bits interwoven into one single number. As a result of this technique, similar geocodes are located geographically close together.
 
-A geolocation expressed as (latitude,longitude) can be converted into a geocode, and vice versa without the help of a database. Hence this system can run offline.
+A geolocation expressed as (latitude,longitude) can be converted into a geocode, and vice versa without the help of a database. Therefore this system can run offline.
 
-A very simple algorithm converting between coordinates to base 36 alphanumeric geocodes is provided in the public domain to be used without any restrictions.
+A very simple algorithm converting between coordinates to base 36 alphanumeric geocodes and vice versa, is provided in the public domain to be used without any restrictions.
 
 
 Links
@@ -26,7 +26,7 @@ Links
 
 Description
 -----------
-Geocodes are alphanumeric strings built out on an alhpabet of 26 ASCII letters and 10 digits. All digits in the code alternate between latitude and longitude. 
+Geocodes are alphanumeric strings built from an alhpabet of 26 ASCII letters and 10 digits. All digits in the code alternate between latitude and longitude. 
 
 A geocode ranges in length from 1 (the point 0.00000,0.00000 at the intersection the equator and greenwich is geocode 0), to length 10 (-43.95296,-176.54867 at [178 Waitangi Wharf Owenga Road, Chatham Islands, New Zealand](https://geocode.xyz/178%20Waitangi%20Wharf%20Owenga%20Road,%20Chatham%20Islands,%20Ch%20%20New%20Zealand) is geocode QH0VYUJ3M7 )
 
@@ -39,7 +39,8 @@ Geocodes can not be shortened or truncated because they are basically a base 36 
 Geocodes at borderline areas will share most of the significant digits.
    * (45.00001,-64.36000) -> 2QGD21BLIJ
    * (44.99999,-64.36000) -> 2QGD21C09J
-This solves a borderline case of the popular geohash algorithm, geohashes of (45.00001,-64.36000) and (44.99999,-64.36000) are f840p2n2p3 and dxfpzryrzq respectively although the points are only 1 meter appart. (see http://geohash.org/f840p2n2p3  and http://geohash.org/dxfpzryrzq )
+   
+This solves a borderline case of the popular geohash algorithm. Geohashes of (45.00001,-64.36000) and (44.99999,-64.36000) are f840p2n2p3 and dxfpzryrzq respectively although the points are only 1 meter appart. (see http://geohash.org/f840p2n2p3  and http://geohash.org/dxfpzryrzq )
    
 A more detailed description of the algorithm and a comparison to similar system is provided in the wiki.
 
