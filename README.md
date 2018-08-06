@@ -8,7 +8,7 @@ This system uses a simple space-filling technique to generate codes using an alp
 
 It is designed to generate geocodes for representing locations with high accuracy. It can be used as a high accuracy postal code system or for shortening latitude,longitude points with minimal loss of location information. (the three dimensional version also supports elevation, at a cost of one more byte in the resulting geocode).
 
-Departing from the overriding techique of many grid-based location codes, geocodes represent points, not areas. Each geocode corresponds to a latitude,longitude pair with accuracy up to the 5th decimal point (i.e. 1 meter)
+Departing from the main techique of grid-based location codes, geocodes represent points, not areas. Each geocode corresponds to a latitude,longitude pair with accuracy up to the 5th decimal point (i.e. 1 meter)
 
 Latitude,longitude values are combined as two linear curves, then converted to binary numbers and their bits interwoven into one single number. As a result of this technique, similar geocodes are located geographically close together.
 
