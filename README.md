@@ -6,7 +6,7 @@ Geocode is a one-dimensional location code with several advantages over similar 
 
 This system uses a simple space-filling technique to generate codes using an alphabet of all 36 alphanumeric characters.
 
-It is designed to generate single geocodes for representing locations, and it can be used as a high accuracy postal code system or simply as a system for shortening latitude,longitude values with minimal loss of location information. (the three dimensional version also supports elevation, at a cost of one more byte in the resulting geocode).
+It is designed to generate single geocodes for representing locations with high accuracy. It can be used as a high accuracy postal code system or for shortening latitude,longitude points with minimal loss of location information. (the three dimensional version also supports elevation, at a cost of one more byte in the resulting geocode).
 
 Departing from the overriding techique of many grid-based location codes, geocodes represent points, not areas. Each geocode corresponds to a latitude,longitude pair with accuracy up to the 5th decimal point (i.e. 1 meter)
 
