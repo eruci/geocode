@@ -8,7 +8,7 @@ It is designed to generate codes for representing locations, and it can be used 
 
 Departing from the overriding techique of many grid-based location codes, geocodes represent points not areas. Each geocode corresponds to a latitude,longitude pair with accuracy up to the 5th decimal point (i.e. 1 meter)
 
-Similarly to some other systems, similar geocodes are located geographically close together.
+Latitude,longitude values are combined as two linear curves, then converted to binary numbers and their bits interwoven into one single number. As a result of this technique, similar geocodes are located geographically close together.
 
 A geolocation expressed as (latitude,longitude) can be converted into a geocode, and vice versa without the help of a database. Hence this system can run offline.
 
@@ -26,14 +26,20 @@ Description
 -----------
 Geocodes are alphanumeric strings built out on an alhpabet of 26 ASCII letters and 10 digits. All digits in the code alternate between latitude and longitude. 
 
-A geocode ranges in length from 1 (the point 0.00000,0.00000 at the intersection the equator and greenwich is geocode 0), to length 10 (-43.95296,-176.54867 - 178 Waitangi Wharf Owenga Road, Chatham Islands, New Zealand is geocode QH0VYUJ3M7 )
+A geocode ranges in length from 1 (the point 0.00000,0.00000 at the intersection the equator and greenwich is geocode 0), to length 10 (-43.95296,-176.54867 at [178 Waitangi Wharf Owenga Road, Chatham Islands, New Zealand](https://geocode.xyz/178%20Waitangi%20Wharf%20Owenga%20Road,%20Chatham%20Islands,%20Ch%20%20New%20Zealand) is geocode QH0VYUJ3M7 )
 
-Latitude,longitude up to the 5th decimal point can be writen with a minimum of 3 digits (0,0) and up to 20 digits (-43.95296,-176.54867)
+Latitude,longitude up to the 5th decimal point can be writen with a minimum of 3 digits (0,0) and up to 20 digits (-43.95296,-176.54867) as a pair of decimal numbers.
 
-A geocode in most cases is half as long as its corresponding latitude,longitude and preserves many properties of the latitude,longitude pair. 
+A geocode in most cases is half as long as its corresponding latitude,longitude and preserves many properties of the latitude,longitude pair to a very large extent. 
 
 Geocodes can not be shortened or truncated because they are basically a base 36 alphanumeric representation of a single number representing both latitude and longitude (with their digits interwoven )
 
+Geocodes at borderline areas will share most of the significant digits.
+   * (45.00001,-64.36000) -> 2QGD21BLIJ
+   * (44.99999,-64.36000) -> 2QGD21C09J
+This solves a borderline case of the popular geohash algorithm, geohashes of (45.00001,-64.36000) and (44.99999,-64.36000) are f840p2n2p3 and dxfpzryrzq respectively. (see http://geohash.org/f840p2n2p3  and http://geohash.org/dxfpzryrzq )
+   
+A more detailed description of the algorithm and a comparison to similar system is provided in the wiki.
 
 Example Code
 ------------
