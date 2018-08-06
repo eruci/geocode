@@ -21,7 +21,7 @@ Links
 -----
  * [Geocode.xyz](https://geocode.xyz/)
  * [Mailing list](https://groups.google.com/forum/#!forum/geocode)
- * [An overview of similar systems](https://groups.google.com/forum/#!forum/geocode)
+ * [A lit review](https://github.com/eruci/geocode/wiki/Comparison-to-similar-systems)
  * [Geocode definition](https://github.com/geocode/geocode_definition.adoc)
 
 Description
