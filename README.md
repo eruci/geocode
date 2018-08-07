@@ -40,7 +40,7 @@ Geocodes at borderline areas will share most of the significant digits.
    * (45.00001,-64.36000) -> 2QGD21BLIJ
    * (44.99999,-64.36000) -> 2QGD21C09J
    
-This solves a borderline case of the popular geohash algorithm. Geohashes of (45.00001,-64.36000) and (44.99999,-64.36000) are f840p2n2p3 and dxfpzryrzq respectively although the points are only 1 meter appart. (see http://geohash.org/f840p2n2p3  and http://geohash.org/dxfpzryrzq )
+This solves a borderline case of the popular geohash algorithm. Geohashes of (45.00001,-64.36000) and (44.99999,-64.36000) are f840p2n2p3 and dxfpzryrzq respectively although the points are only 1 meter apart. (see http://geohash.org/f840p2n2p3  and http://geohash.org/dxfpzryrzq )
    
 A more detailed description of the algorithm and a comparison to similar system is provided in the wiki.
 
