@@ -1,5 +1,5 @@
-# Geocode
-A Geolocation Code mapping latitude,longitude to one alphanumeric number.
+# GeoCode
+A Geolocation Code, mapping latitude,longitude to one alphanumeric number.
 ==================
 
 Geocode is a one-dimensional location code with several advantages over similar systems. It is shorter than most alternatives (up to 10 bytes), has higher accuracy (up to 1 meters) and avoids the borderline discontinuities of other one-dimensional location codes such a geohashes and plus codes. 
