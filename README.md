@@ -1,16 +1,16 @@
 # GeoCode
-A Geolocation Code, mapping latitude,longitude to one alphanumeric number.
+A Geolocation Code, mapping latitude,longitude to one alphanumeric number or three geonames.
 ==================
 
-Geocode is a one-dimensional location code with several advantages over similar systems. It is shorter than most alternatives (up to 10 bytes), has higher accuracy (up to 1 meters) and avoids the borderline discontinuities of other one-dimensional location codes such a geohashes and plus codes. 
+Geocode is a one-dimensional location code with several advantages over similar systems. It is shorter than most alternatives (up to 10 bytes), has higher accuracy (up to 1 meters) and avoids the borderline discontinuities of other one-dimensional location codes such a geohashes and plus codes. It's human readable extenssion, three-geo-names, uses three existing geographic place names in a hierarchical fation with the first name representing a location name inside an approx 30 km^2 area containing the point, and the second name also representing a location within the same area with a high probability. For example,  34.03808,-118.30078 is encoded to LZNXSMKCU4 or as three geonames: LA-Hollywood-Moliterno. Another location nearby, say 34.03801,-118.30070, is LZNXSMKCMV and LA-Hollywood-NY.
 
-This system uses a simple space-filling technique to generate codes using an alphabet of all 36 alphanumeric characters.
+We use a simple space-filling technique to generate codes using an alphabet of all 36 alphanumeric characters or 179001 geonames (selected from http://geonames.org and http://geonames.nga.mil/gns/html/gis_countryfiles.html with several requirements for names being recognizable, short and evenly spread throughout the earth.)
 
-It is designed to generate geocodes for representing locations with high accuracy. It can be used as a high accuracy postal code system or for shortening latitude,longitude points with minimal loss of location information. (the three dimensional version also supports elevation, at a cost of one more byte in the resulting geocode).
+Geocode is designed for representing locations with high accuracy. It can be used as a high accuracy postal code system or for shortening latitude,longitude points with no loss of location information. (the three dimensional version also supports elevation, at a cost of one more byte in the resulting geocode).
 
-Departing from the main techique of grid-based location codes, geocodes represent points, not areas. Each geocode corresponds to a latitude,longitude pair with accuracy up to the 5th decimal point (i.e. 1 meter)
+Unlike grid-based location codes, geocodes represent points, not areas. Each geocode corresponds to a latitude,longitude pair with accuracy up to the 5th decimal point (i.e. 1 meter)
 
-Latitude,longitude values are combined as two linear curves, then converted to binary numbers and their bits interwoven into one single number. As a result of this technique, similar geocodes are located geographically close together.
+Latitude,longitude values are combined as two linear curves, then converted to binary numbers and their bits interwoven into one single number. As a result of this technique, similar geocodes are located geographically close together in both alphanumeric and 3geoname formats.
 
 A geolocation expressed as (latitude,longitude) can be converted into a geocode, and vice versa without the help of a database. Therefore this system can run offline.
 
