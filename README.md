@@ -10,7 +10,7 @@ Geocode is designed for representing locations with high accuracy. It can be use
 
 Unlike grid-based location codes, geocodes represent points, not areas. Each geocode corresponds to a latitude,longitude pair with accuracy up to the 5th decimal point (i.e. 1 meter)
 
-Latitude,longitude values are combined as two linear curves, then converted to binary numbers and their bits interwoven into one single number. As a result of this technique, similar geocodes are located geographically close together in both alphanumeric and 3geoname formats.
+Latitude,longitude values are combined as two linear curves, then converted to binary numbers and their bits interwoven into one single number. As a result of this technique, similar geocodes are located geographically close together in both alphanumeric and 3geoname formats. The only discontinuities for this system happen at the points where latitude equals longitude.
 
 A geolocation expressed as (latitude,longitude) can be converted into a geocode, and vice versa without the help of a database. Therefore this system can run offline.
 
