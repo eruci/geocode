@@ -8,7 +8,7 @@ It's human readable format, three-geo-names, uses three existing geographic plac
 
 For example,  34.03808,-118.30078 (a location in Los Angeles), is encoded to MZ8OSICO9M or as three geonames: LA-Hollywood-Moliterno. Another location nearby, say 34.03801,-118.30070, is MZ8OSICM94 or LA-Hollywood-NY. Unlike similar location encoding systems such as what3words, some of the words are intuitively connected to the place and some are not. This solves both the problems or error correction and human readable geographic proximity.
 
-We use a simple space-filling technique to generate codes using an alphabet of all 36 alphanumeric characters or 179001 ascii geonames (selected from http://geonames.org and http://geonames.nga.mil/gns/html/gis_countryfiles.html with several requirements for names being recognizable, short and evenly spread throughout the earth.)
+We use a simple space-filling technique to generate location codes using an alphabet of all 36 alphanumeric characters or 179001 ascii geonames and/or their acronyms (eg., LA -> Los Angeles). The names are selected from http://geonames.org and http://geonames.nga.mil/gns/html/gis_countryfiles.html with several requirements for names being recognizable, short, distinct from each other and evenly spread throughout the earth.
 
 Geocode is designed for representing locations with high accuracy. It can be used as a high accuracy postal code system or for shortening latitude,longitude points with no loss of location information. (the three dimensional version also supports elevation, at a cost of one more byte in the resulting geocode).
 
