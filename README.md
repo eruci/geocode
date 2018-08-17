@@ -4,13 +4,13 @@ A Geolocation Code, mapping latitude,longitude to one alphanumeric number or thr
 
 Geocode is a one-dimensional location code with several advantages over similar systems. It is short (up to 10 bytes), has higher accuracy (up to 1 meters) and avoids the borderline discontinuities of other one-dimensional location codes such a geohashes. 
 
-It's human readable format, three-geo-names, uses three existing geographic place names in a hierarchical way with the first name representing the most prominent location name inside an 30 km^2 area containing the point, and the other two names chosen at random.
+The geocode of a point in its human readable format, three-geo-names, uses three existing geographic place names in a hierarchical way with the first name representing the most prominent location name inside an 30 km^2 area containing the point, and the other two names chosen at random.
 
-For example,  34.03808,-118.30078 (a location in Los Angeles), is encoded to MZ8OSICO9M or as three geonames: LA-Hollywood-Moliterno. Another location nearby, say 34.03801,-118.30070, is MZ8OSICM94 or LA-Hollywood-NY. Unlike similar location encoding systems such as what3words, some of the words are intuitively connected to the place and some are not. This solves both the problems or error correction and human readable geographic proximity.
+For example,  34.03808,-118.30078 (a location in Los Angeles), is encoded to MZ8OSICO9M or as three geonames: LA-Rome-Moliterno. Another location nearby, say 34.03801,-118.30070, is MZ8OSICM94 or LA-Hollywood-NY. Unlike similar location encoding systems such as what3words, one of the words, the first one, is intuitively connected to the place and the other two are not. This solves two problems, error correction and human readable geographic proximity.
 
-We use a simple space-filling technique to generate location codes using an alphabet of all 36 alphanumeric characters or 179001 ascii geonames and/or their acronyms (eg., LA -> Los Angeles). The names are selected from http://geonames.org and http://geonames.nga.mil/gns/html/gis_countryfiles.html with several requirements for names being recognizable, short, distinct from each other and evenly spread throughout the earth.
+The algorithm uses a simple space-filling technique to generate location codes from an alphabet of all 36 alphanumeric characters or 179001 ascii geonames and/or their acronyms (eg., LA -> Los Angeles). The names are selected from http://geonames.org and http://geonames.nga.mil/gns/html/gis_countryfiles.html with several requirements for names being recognizable, short, distinct from each other and evenly spread throughout the earth.
 
-Geocode is designed for representing locations with high accuracy. It can be used as a high accuracy postal code system or for shortening latitude,longitude points with no loss of location information. (the three dimensional version also supports elevation, at a cost of one more byte in the resulting geocode).
+Geocode is designed for representing locations with high accuracy. It can be used as a high accuracy postal code system or for shortening latitude,longitude into a single string with no loss of location information. 
 
 Unlike grid-based location codes, geocodes represent points, not areas. Each geocode corresponds to a latitude,longitude pair with accuracy up to the 5th decimal point (i.e. 1 meter)
 
@@ -18,7 +18,7 @@ Latitude,longitude values are combined as two linear curves, then converted to b
 
 A geolocation expressed as (latitude,longitude) can be converted into a geocode, and vice versa using a data structure embeded in the software. Therefore this system can run offline.
 
-The software is provided in the public domain to be used without any restrictions.
+The software is provided in the public domain to be used without any restrictions, on condition that the source is acknowledged.
 
 
 Links
