@@ -10,7 +10,7 @@ For example,  34.03808,-118.30078 (a location in Los Angeles), is encoded to MZ8
 
 The algorithm uses a simple space-filling technique to generate location codes from an alphabet of all 36 alphanumeric characters or 179001 ascii geonames and/or their acronyms (eg., LA -> Los Angeles). The names are selected from http://geonames.org and http://geonames.nga.mil/gns/html/gis_countryfiles.html with several requirements for names being recognizable, short, distinct from each other and evenly spread throughout the earth.
 
-Geocode is designed for representing locations with high accuracy. It can be used as a high accuracy postal code system or for shortening latitude,longitude into a single string with no loss of location information. 
+Geocode is designed for representing locations with high accuracy. It can be used as a postal code system or for shortening latitude,longitude into a single string with no loss of location information. 
 
 Unlike grid-based location codes, geocodes represent points, not areas. Each geocode corresponds to a latitude,longitude pair with accuracy up to the 5th decimal point (i.e. 1 meter)
 
