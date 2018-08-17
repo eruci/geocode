@@ -4,7 +4,7 @@ A Geolocation Code, mapping latitude,longitude to one alphanumeric number or thr
 
 Geocode is a one-dimensional location code with several advantages over similar systems. It is short (up to 10 bytes), has higher accuracy (up to 1 meters) and avoids the borderline discontinuities of other one-dimensional location codes such a geohashes. 
 
-It's human readable format, three-geo-names, uses three existing geographic place names in a hierarchical way with the first name representing a location name inside an approx 30 km^2 area containing the point, the second name covers about 0.2 km^2 and it also represents a location within the same area with a high probability. The third name is random and accounts for a very small area, approx 1 m^2.
+It's human readable format, three-geo-names, uses three existing geographic place names in a hierarchical way with the first name representing the most prominent location name inside an 30 km^2 area containing the point, and the other two names chosen at random.
 
 For example,  34.03808,-118.30078 (a location in Los Angeles), is encoded to MZ8OSICO9M or as three geonames: LA-Hollywood-Moliterno. Another location nearby, say 34.03801,-118.30070, is MZ8OSICM94 or LA-Hollywood-NY. Unlike similar location encoding systems such as what3words, some of the words are intuitively connected to the place and some are not. This solves both the problems or error correction and human readable geographic proximity.
 
