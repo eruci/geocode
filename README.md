@@ -19,7 +19,7 @@ The geocode of a point in its human readable format uses three existing geograph
 
 For example,  34.03808,-118.30078 (a location in Los Angeles), is encoded to MZ8OSICO9M or as three geonames: LA-Rome-Moliterno. Another location nearby, say 34.03801,-118.30070, is MZ8OSICM94 or LA-Hollywood-NY.
 
-The human readable algorithm uses 163000 geonames from http://geonames.org and http://geonames.nga.mil/gns/html/gis_countryfiles.html with several requirements for the names being recognizable, short, easy to pronounce, distinct from each other and evenly spread throughout the earth.
+The human readable algorithm uses 163000 geonames from http://geonames.org and http://geonames.nga.mil/gns/html/gis_countryfiles.html with several requirements for the names (recognizable, short, easy to pronounce, distinct from each other and evenly spread throughout the earth.)
 
 Unlike many grid-based location codes, geocodes represent points not areas. Each geocode maps to a latitude,longitude pair with accuracy up to the 5th decimal point (i.e. 1 meter)
 
