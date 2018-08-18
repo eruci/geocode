@@ -2,7 +2,7 @@
 A Geolocation Code, mapping latitude,longitude to one alphanumeric number or three geonames.
 ==================
 
-Geocode is a one-dimensional location code. It uses a simple space-filling technique to map two dimensional points (latitude,longitude) to a string with no loss of information.
+Geocode is a one-dimensional location code. It uses a simple space-filling technique to map two dimensional points (latitude,longitude) to either an alphanumeric string or a geoname triple with no loss of information.
 
 Geocode has several advantages over similar systems. It is short (up to 10 bytes), has higher accuracy (up to 1 meters) and avoids the borderline discontinuities of other one-dimensional location codes such a geohashes. 
 
