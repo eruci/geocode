@@ -4,12 +4,12 @@ A Geolocation Code, mapping latitude,longitude to one alphanumeric number or thr
 
 
 == 
-Abstract
+##Abstract
 
 Encoding geographic coordinates into a string is a trivial thing. Yet, many have attempted to build grid based systems <<geohash>> <<PlusCodes>>, and some even try to make a business for selling these codes <<Zippr>>, <<What3Words>>. The main motivation for all this work, is that Latitude and longitude are not sufficient for identifying a place in both an unambiguous and human friendly way. A single number for this pair of numbers is a more desirable representation, if only it can preserve all the information contained in the original pair, something no encoding system currently achieves. This is our goal.
 
 == 
-Intro
+##Intro
 
 Geocode is a one-dimensional location code. It uses a simple space-filling technique to map two dimensional points (latitude,longitude) to either an alphanumeric string or a geoname triple with no loss of information.
 
