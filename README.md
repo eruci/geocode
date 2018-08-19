@@ -1,5 +1,5 @@
 # GeoCode
-A Geolocation Code, mapping latitude,longitude to one alphanumeric number or three geonames.
+A Geolocation Code, mapping (latitude,longitude) to {(one alphanumeric number) or (three geonames)}.
 ==================
 
 
