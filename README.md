@@ -13,17 +13,17 @@ Encoding geographic coordinates into a string is a trivial thing. Yet, there are
 
 Geocode is a one-dimensional location code. It uses a simple space-filling technique to map two dimensional points (latitude,longitude) to either an alphanumeric string or a geoname triple with no loss of information.
 
-Geocode has several advantages over similar systems. The alphanumeric geocode is short (up to 10 bytes), has higher accuracy (up to 1 meters) and avoids the borderline discontinuities of other one-dimensional location codes such a geohashes. Triple geoname codes on the other hand are more memorizable, are intuitively reprentative of the location and are composed of relatively short geo names (up to 8 letters).
+Geocode has several advantages over similar systems. The alphanumeric geocode is short (up to 10 bytes), has higher accuracy (up to 1 meters) and avoids the borderline discontinuities of other one-dimensional location codes such as geohashes. Triple geoname codes on the other hand are more memorizable, are intuitively reprentative of the location and are composed of relatively short geo names (up to 8 letters).
 
-The geocode of a point in its human readable format uses three existing geographic place names in a hierarchical way, with the first name representing the most prominent location name inside a 26,569 km^2 area containing the point, and the other two names not necessarily intuitively connected to the place.
+The geocode of a point in its human readable format uses three existing geographic place names in a hierarchical way, with the first name representing the most prominent location name inside a 26,569 km^2 area containing the point, while the other two names are not necessarily intuitively connected to the place.
 
 For example,  34.03808,-118.30078 (a location in Los Angeles), is encoded to MZ8OSICO9M or as three geonames: LA-Rome-Moliterno. Another location nearby, say 34.03801,-118.30070, is MZ8OSICM94 or LA-Hollywood-NY.
 
-The human readable algorithm uses 163000 geonames from http://geonames.org and http://geonames.nga.mil/gns/html/gis_countryfiles.html with several requirements for the names (recognizable, short, easy to pronounce, distinct from each other and evenly spread throughout the earth.)
+The human readable algorithm uses 163000 geonames from http://geonames.org and http://geonames.nga.mil/gns/html/gis_countryfiles.html with several requirements for the names (mainly they must be recognizable, short, easy to pronounce, distinct from each other and evenly spread throughout the earth.)
 
 Unlike many grid-based location codes, geocodes represent points not areas. Each geocode maps to a latitude,longitude pair with accuracy up to the 5th decimal point (i.e. 1 meter)
 
-Latitude,longitude values are combined as two linear curves, then converted to binary numbers and interleaving their bits into one single binary number. As a result of this technique, similar geocodes are located geographically close together in both alphanumeric and triple geoname formats.
+Latitude,longitude values are combined as two linear curves, converted to binary numbers then combined by interleaving their bits into one single binary number. As a result of this technique, similar geocodes are located geographically close together in both alphanumeric and triple geoname formats.
 
 A geolocation expressed as (latitude,longitude) can be converted into a geocode, and vice versa using a data structure embeded in the software. Therefore this system can run offline.
 
