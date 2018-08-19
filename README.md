@@ -6,7 +6,7 @@ A Geolocation Code, mapping (latitude,longitude) to {(one alphanumeric number) o
 
 ## Abstract
 
-Encoding geographic coordinates into a string is a trivial thing. Yet, there are many grid based systems (geohash, PlusCodes, Mapcodes), and some even turn the thing into a business (Zippr, What3Words). The main motivation for all this work, is that Latitude and longitude are not sufficient for identifying a place in both an unambiguous and human friendly way. A single number for this pair of numbers is a more desirable representation, if only it can preserve all the information contained in the original pair, something no encoding system currently does. This is our goal.
+Encoding geographic coordinates into a string is a trivial thing. Yet, there are many grid based systems (geohash, PlusCodes, Mapcodes), and some even turn the thing into a business (Zippr, What3Words). The main motivation for all this work, is that Latitude and longitude are not sufficient for identifying a place in both an unambiguous and human friendly way. A single number for this pair of numbers is a more desirable representation, if only it can preserve all the information contained in the original latitude,longitude pair, something no encoding system currently does. This is our goal.
 
 
 ## Intro
