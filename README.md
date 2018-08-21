@@ -15,7 +15,7 @@ Geocode is a one-dimensional location code. It uses a simple space-filling techn
 
 Geocode has several advantages over similar systems. The alphanumeric geocode is short (up to 10 bytes), has higher accuracy (up to 1 meters) and avoids the borderline discontinuities of other one-dimensional location codes such as geohashes. Triple geoname codes on the other hand are more memorizable, are intuitively reprentative of the location and are composed of relatively short geo names (up to 8 letters).
 
-The geocode of a point in its human readable format uses three existing geographic place names in a hierarchical way, with the first name representing the most prominent location name inside a 26,569 km^2 area containing the point, while the other two names are not necessarily intuitively connected to the place.
+The geocode of a point in its human readable format uses three existing geographic place names in a hierarchical way, with the first name representing the most prominent location name inside a 22,500 km^2 area containing the point, while the other two names are not necessarily intuitively connected to the place.
 
 For example,  34.03808,-118.30078 (a location in Los Angeles), is encoded to MZ8OSICO9M or as three geonames: LA-Rome-Moliterno. Another location nearby, say 34.03801,-118.30070, is MZ8OSICM94 or LA-Hollywood-NY.
 
