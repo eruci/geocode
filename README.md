@@ -23,7 +23,7 @@ The human readable algorithm uses 150000 geonames from http://geonames.org and h
 
 Unlike many grid-based location codes, geocodes represent points not areas. Each geocode maps to a latitude,longitude pair with accuracy up to the 5th decimal point (i.e. 1 meter)
 
-Latitude,longitude values are combined as two linear curves, converted to binary numbers then combined by interleaving their bits into one single binary number. As a result of this technique, similar geocodes are located geographically close together in both alphanumeric and triple geoname formats.
+Latitude,longitude values are combined as two linear curves, converted to binary numbers then combined by interleaving their bits. As a result of this technique, similar geocodes are located geographically close together in both alphanumeric and triple geoname formats.
 
 A geolocation expressed as (latitude,longitude) can be converted into a geocode, and vice versa using a data structure embeded in the software. Therefore this system can run offline.
 
