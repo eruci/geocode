@@ -65,7 +65,7 @@ This solves the many borderline issues of the popular geohash algorithm.
 Equivalent Geohashes are:
    * (45.00001,-64.36000) -> f840p2n2p3 
    * (44.99999,-64.36000) -> dxfpzryrzq 
-   Although these points are only 1 meter apart. (see http://geohash.org/f840p2n2p3  and http://geohash.org/dxfpzryrzq )
+Although these points are only 1 meter apart. (see http://geohash.org/f840p2n2p3  and http://geohash.org/dxfpzryrzq )
    
 A more detailed description of the algorithm and a comparison to similar system is provided in the wiki.
 
