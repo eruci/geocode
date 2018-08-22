@@ -50,7 +50,7 @@ An alphanumeric geocode in most cases is half as long as its corresponding latit
 
 Similarly, a Triple Name Geocode is composed of three existing geonames of length no more than 8 bytes, with the first geoname being the most promiment location name in its geographic proximity.
 
-Alphanumeric Geocodes and Triple Name Geocode can not be shortened nor truncated because they are basically either a base 36 alphanumeric representation of a single number representing both latitude and longitude, or a base 163000 word alphabet encoding of this number. 
+Alphanumeric Geocodes and Triple Name Geocode can not be shortened nor truncated because they are basically either a base 36 alphanumeric representation of a single number representing both latitude and longitude, or a base 150000 name alphabet encoding of this number. 
 
 Alphanumeric Geocodes at borderline areas will share most of the significant digits.
    * (45.00001,-64.36000) -> 2QGD21BLIJ
@@ -60,7 +60,12 @@ Three Name Geocodes at borderline areas will share the first name.
    * (45.00001,-64.36000) -> HALIFAX-NY-RIO
    * (44.99999,-64.36000) -> HALIFAX-BAKSAN-MERZEN
    
-This solves the many borderline issues of the popular geohash algorithm. Geohashes of (45.00001,-64.36000) and (44.99999,-64.36000) are f840p2n2p3 and dxfpzryrzq respectively although the points are only 1 meter apart. (see http://geohash.org/f840p2n2p3  and http://geohash.org/dxfpzryrzq )
+This solves the many borderline issues of the popular geohash algorithm. 
+
+Equivalent Geohashes are:
+   * (45.00001,-64.36000) -> f840p2n2p3 
+   * (44.99999,-64.36000) -> dxfpzryrzq 
+   Although these points are only 1 meter apart. (see http://geohash.org/f840p2n2p3  and http://geohash.org/dxfpzryrzq )
    
 A more detailed description of the algorithm and a comparison to similar system is provided in the wiki.
 
