@@ -17,9 +17,9 @@ Geocode has several advantages over similar systems. The alphanumeric geocode is
 
 The geocode of a point in its human readable format uses three existing geographic place names in a hierarchical way, with the first name representing the most prominent location name inside a 22,500 km^2 area containing the point, while the other two names are not necessarily intuitively connected to the place.
 
-For example,  34.03808,-118.30078 (a location in Los Angeles), is encoded to MZ8OSICO9M or as three geonames: LA-Rome-Moliterno. Another location nearby, say 34.03801,-118.30070, is MZ8OSICM94 or LA-Hollywood-NY.
+For example,  34.03808,-118.30078 (a location in Los Angeles), is encoded to EE9IBGLHSS or as three geonames: LA-BRESSA-SVORTMOR. Another location about 10 m away, say 34.03801,-118.30070, is EE9IBGLHLR or LA-BRESSA-CORAMA.
 
-The human readable algorithm uses 163000 geonames from http://geonames.org and http://geonames.nga.mil/gns/html/gis_countryfiles.html with several requirements for the names (mainly they must be recognizable, short, easy to pronounce, distinct from each other and evenly spread throughout the earth.)
+The human readable algorithm uses 150000 geonames from http://geonames.org and http://geonames.nga.mil/gns/html/gis_countryfiles.html with several requirements for the names (chosen to be recognizable, short, easy to pronounce, distinct from each other and evenly spread throughout the earth.)
 
 Unlike many grid-based location codes, geocodes represent points not areas. Each geocode maps to a latitude,longitude pair with accuracy up to the 5th decimal point (i.e. 1 meter)
 
@@ -41,7 +41,8 @@ In depth description
 -----------
 Geocodes come in two forms: as alpanumeric strings up to 10 bytes, or as human readable 3 geonames separated by dashes. We will be referring to them as either Alphanumeric Geocodes or Triple Name Geocodes.
 
-An alphanumeric geocode ranges in length from 1 (the point 0.00000,0.00000 at the intersection the equator and greenwich is geocode 0), to length 10 (-43.95296,-176.54867 at [178 Waitangi Wharf Owenga Road, Chatham Islands, New Zealand](https://geocode.xyz/178%20Waitangi%20Wharf%20Owenga%20Road,%20Chatham%20Islands,%20Ch%20%20New%20Zealand) is geocode QH0VYUJ3M7 )
+An alphanumeric geocode has length from 10 for any location on earth, with locations that are far having very dietinct geocodes, while those that are near sharing most significant bits.
+For example, the point 0.00000,0.00000 at the intersection the equator and greenwich is geocode 7HARY8CWLC, whereas -43.95296,-176.54867 at [178 Waitangi Wharf Owenga Road, Chatham Islands, New Zealand](https://geocode.xyz/178%20Waitangi%20Wharf%20Owenga%20Road,%20Chatham%20Islands,%20Ch%20%20New%20Zealand) is geocode 8P9JOUZ5PJ )
 
 As Triple Name Geocode 0.00000,0.00000 is ZERO-ZERO-AFRICA , and -43.95296,-176.54867 CHATHAM-PUNE-NIL.
 
