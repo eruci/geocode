@@ -31,7 +31,7 @@ Unlike many grid-based location codes, geocodes represent points not areas. Each
 
 In a nutshell, latitude,longitude values are represented as two linear curves, converted to binary numbers then combined by interleaving their bits. As a result of this technique, similar geocodes are located geographically close together in both alphanumeric and triple geoname formats.
 
-A geolocation expressed as (latitude,longitude) can be converted into a geocode, and vice versa using a data structure embeded in the software.
+A geolocation expressed as (latitude,longitude) can be converted offline into a geocode, and vice versa using a data structure embeded in the software.
 
 The software is in the public domain to be used without any restrictions.
 
