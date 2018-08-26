@@ -92,13 +92,5 @@ Although these points are only 1 meter apart. (see http://geohash.org/f840p2n2p3
 
 Triple Name Geocode solves what is widely perceived as a flaw with similar systems such as What3words, in that the first name is a geoname in close proximity to the point. This gives intuitive context to the association. 
 
-A more detailed comparison to similar systems with more examples is provided in the wiki.
+A more detailed comparison to similar systems with more examples is provided in the [wiki](https://github.com/eruci/geocode/wiki/Comparison-to-similar-systems).
 
-Example Code
-------------
-Coming soon.
-
-
-Todo
-#geo3names
-Geo3Names - The Geolocation Code mapping latitude,longitude to 3 intuitive geonames.
