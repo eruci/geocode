@@ -48,7 +48,7 @@ In depth description
 -----------
 A Geocode is a case insensitive string that comes in two forms: as a 10 byte long alpanumeric string or as 3 geonames separated by dashes. Let's call them Alphanumeric Geocodes or Triple Name Geocodes.
 
-An alphanumeric geocode has length of 10 bytes for any location on earth, with locations that are far having very distinct geocodes, while those that are near sharing most significant bits. 
+An alphanumeric geocode has length of 10 bytes for any location on earth, with locations that are far having very distinct geocodes, while those that are near sharing most significant digits/names. 
 
 The minimum value for a GeoCode is in the South Pole (-90.00000,-154.23359)/(1000000000)/(SOUTH-NOALA-MONETTE), and the maximum is at the North Pole (90.00000,23.14496)/(UTRC9O4N8P)/(NORTH-BUOF-SCHONGAU). These points are the computed minimum and maximum values for the space-fitting function I'm using to map latitude,longitude to a single value for both.
 
