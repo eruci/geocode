@@ -78,7 +78,7 @@ An alphanumeric geocode in most cases is half as long as its corresponding latit
 
 Alphanumeric Geocodes and Triple Name Geocode can not be shortened nor truncated because they are basically either a base 36 alphanumeric representation of a single number representing both latitude and longitude, or a base 146300 name alphabet encoding. 
 
-Alphanumeric Geocodes at borderline areas will share most of the significant digits.
+Alphanumeric Geocodes at borderline areas will share most of the significant bytes/geonames.
    * (45.00001,-64.36000) -> EHB105754C -> HALIFAX-GAZAH-DOMOU
    * (44.99999,-64.36000) -> EHB1056SH4 -> HALIFAX-GAZAH-NDITI
    
