@@ -19,19 +19,19 @@ Geocode has several advantages over similar systems.
 
 The alphanumeric geocode is short (10 bytes), has higher accuracy (up to 1 meters) and avoids the borderline discontinuities of other one-dimensional location codes such as geohashes. 
 
-Triple geoname codes on the other hand are more memorizable, are intuitively reprentative of the location and are composed of relatively short geo names (up to 8 letters).
+Triple geoname codes on the other hand are more memorizable, are intuitively reprentative of the location and are composed of relatively short existing geo names (up to 8 letters).
 
-The geocode of a point in its human readable format uses three existing geographic place names in a hierarchical way, with the first name representing the most prominent location name inside a 21,403 km^2 area containing the point, while the other two names are not necessarily intuitively connected to the place.
+The first name in a triple geoname code represents the most prominent location name inside a 21,403 km^2 area containing the point.
 
-For example,  34.03808,-118.30078 (a location in Los Angeles), is encoded to EE9IBGLHSS or as three geonames: LA-BRESSA-SVORTMOR. Another location about 10 m away, say 34.03801,-118.30070, is EE9IBGLHLR or LA-BRESSA-CORAMA.
+For example,  34.05223,-118.24368 (a location in Los Angeles), is encoded to EKEAJ18E08 or as three geonames: LA-GASPAR-YANSI. Another location about 1 m away, say (34.05223,-118.24369), is EKEAJ18E1D or LA-GASPAR-HINGWEN.
 
-The human readable algorithm uses 150000 geonames from http://geonames.org and http://geonames.nga.mil/gns/html/gis_countryfiles.html with several requirements for the names (chosen to be recognizable, short, easy to pronounce, distinct from each other and evenly spread throughout the earth.)
+The human readable algorithm uses 146300 geonames from http://geonames.org and http://geonames.nga.mil/gns/html/gis_countryfiles.html with several requirements for the names (chosen to be recognizable, short, easy to pronounce, distinct from each other and evenly spread throughout the earth.) We also shorten geonames to their acronyms whenever possible (LA -> Los Angeles, NY -> New York, etc)
 
 Unlike many grid-based location codes, geocodes represent points not areas. Each geocode maps to a latitude,longitude pair with accuracy up to the 5th decimal point (i.e. 1 meter)
 
-Latitude,longitude values are combined as two linear curves, converted to binary numbers then combined by interleaving their bits. As a result of this technique, similar geocodes are located geographically close together in both alphanumeric and triple geoname formats.
+Latitude,longitude values are represented as two linear curves, converted to binary numbers then combined by interleaving their bits. As a result of this technique, similar geocodes are located geographically close together in both alphanumeric and triple geoname formats.
 
-A geolocation expressed as (latitude,longitude) can be converted into a geocode, and vice versa using a data structure embeded in the software. Therefore this system can run offline.
+A geolocation expressed as (latitude,longitude) can be converted into a geocode, and vice versa using a data structure embeded in the software.
 
 The software is in the public domain to be used without any restrictions.
 
@@ -39,35 +39,36 @@ The software is in the public domain to be used without any restrictions.
 Links
 -----
  * [Geocode.xyz](https://geocode.xyz/)
+ * [3geonames.org](https://3geonames.org/)
  * [Mailing list](https://groups.google.com/forum/#!forum/geocode)
  * [A lit review](https://github.com/eruci/geocode/wiki/Comparison-to-similar-systems)
- * [Geocode definition](https://github.com/eruci/geocode/wiki/Geocode)
+
 
 In depth description
 -----------
-Geocodes come in two forms: as alpanumeric strings up to 10 bytes, or as human readable 3 geonames separated by dashes. We will be referring to them as either Alphanumeric Geocodes or Triple Name Geocodes.
+A Geocode is a case insensitive string that comes in two forms: as a 10 byte long alpanumeric string or as 3 geonames separated by dashes. Let's call them Alphanumeric Geocodes or Triple Name Geocodes.
 
-An alphanumeric geocode has length of 10 bytes for any location on earth, with locations that are far having very distinct geocodes, while those that are near sharing most significant bits.
+An alphanumeric geocode has length of 10 bytes for any location on earth, with locations that are far having very distinct geocodes, while those that are near sharing most significant bits. 
 
-For example, the point 0.00000,0.00000 at the intersection the equator and greenwich is geocode 7HARY8CWLC, whereas -43.95296,-176.54867 at [178 Waitangi Wharf Owenga Road, Chatham Islands, New Zealand](https://geocode.xyz/178%20Waitangi%20Wharf%20Owenga%20Road,%20Chatham%20Islands,%20Ch%20%20New%20Zealand) is geocode 8P9JOUZ5PJ )
+The minimum value for a GeoCode is in the South Pole (-90.00000,-154.23359)/(1000000000)/(SOUTH-NOALA-MONETTE), and the maximum is at the North Pole (90.00000,23.14496)/(UTRC9O4N8P)/(NORTH-BUOF-SCHONGAU). These points are the computed minimum and maximum values for the space-fitting function I'm using to map latitude,longitude to a single value for both.
 
-As Triple Name Geocode 0.00000,0.00000 is ZERO-ZERO-AFRICA , and -43.95296,-176.54867 CHATHAM-PUNE-NIL.
+Every other location on earth will fall between these values.
 
-The minimum value for GeoCode is in the South Pole (-90.00000,-154.23359), and the maximum is at the North Pole (90.00000,23.14496). These points are the computed minimum and maximum values for the space-fitting function I'm using to map latitude,longitude to a single value for both.
+For example, the point 0.00000,0.00000 at the intersection the equator and greenwich is alphanumeric geocode 7NFJIIDSBT or triple name geocode EQU-NDOLA-ALAKH, whereas -43.95296,-176.54867 at [178 Waitangi Wharf Owenga Road, Chatham Islands, New Zealand](https://geocode.xyz/178%20Waitangi%20Wharf%20Owenga%20Road,%20Chatham%20Islands,%20Ch%20%20New%20Zealand) is alphanumeric geocode 8VEB9501G0 and triple name geocode WAITANGI-USAKOS-IWHR)
 
 An alphanumeric geocode in most cases is half as long as its corresponding latitude,longitude and preserves all positional properties of the latitude,longitude pair. 
+
+||||||||||
+-43.95296,-176.54867
+8VEB9501G0||||||||||
 
 Similarly, a Triple Name Geocode is composed of three existing geonames of length no more than 8 bytes, with the first geoname being the most promiment location name in its geographic proximity.
 
 Alphanumeric Geocodes and Triple Name Geocode can not be shortened nor truncated because they are basically either a base 36 alphanumeric representation of a single number representing both latitude and longitude, or a base 146300 name alphabet encoding. 
 
 Alphanumeric Geocodes at borderline areas will share most of the significant digits.
-   * (45.00001,-64.36000) -> 2QGD21BLIJ
-   * (44.99999,-64.36000) -> 2QGD21C09J
-  
-Three Name Geocodes at borderline areas will share the first name.
-   * (45.00001,-64.36000) -> HALIFAX-NY-RIO
-   * (44.99999,-64.36000) -> HALIFAX-BAKSAN-MERZEN
+   * (45.00001,-64.36000) -> EHB105754C -> HALIFAX-GAZAH-DOMOU
+   * (44.99999,-64.36000) -> EHB1056SH4 -> HALIFAX-GAZAH-NDITI
    
 This solves the many borderline issues of the popular geohash algorithm. 
 
@@ -77,7 +78,7 @@ Equivalent Geohashes are:
    
 Although these points are only 1 meter apart. (see http://geohash.org/f840p2n2p3  and http://geohash.org/dxfpzryrzq )
    
-A more detailed description of the algorithm and a comparison to similar system is provided in the wiki.
+A more detailed comparison to similar system is provided in the wiki.
 
 Example Code
 ------------
