@@ -50,19 +50,27 @@ A Geocode is a case insensitive string that comes in two forms: as a 10 byte lon
 
 An alphanumeric geocode has length of 10 bytes for any location on earth, with locations that are far having very distinct geocodes, while those that are near sharing most significant digits/names. 
 
-The minimum value for a GeoCode is in the South Pole (-90.00000,-154.23359)/(1000000000)/(SOUTH-NOALA-MONETTE), and the maximum is at the North Pole (90.00000,23.14496)/(UTRC9O4N8P)/(NORTH-BUOF-SCHONGAU). These points are the computed minimum and maximum values for the Space-filling function I'm using to map latitude,longitude to a single value.
+The minimum value for a GeoCode is in the South Pole:
+    * (-90.00000,-154.23359) -> 1000000000 -> SOUTH-NOALA-MONETTE
+    
+The maximum is at the North Pole:
+    * (90.00000,23.14496) -> UTRC9O4N8P -> NORTH-BUOF-SCHONGAU
+    
+These points are the computed minimum and maximum values for the Space-filling function I'm using.
 
 Every other location on earth will fall between these values.
 
-For example, the point 0.00000,0.00000 at the intersection the equator and greenwich is alphanumeric geocode 7NFJIIDSBT or triple name geocode EQU-NDOLA-ALAKH, whereas -43.95296,-176.54867 at [178 Waitangi Wharf Owenga Road, Chatham Islands, New Zealand](https://geocode.xyz/178%20Waitangi%20Wharf%20Owenga%20Road,%20Chatham%20Islands,%20Ch%20%20New%20Zealand) is alphanumeric geocode 8VEB9501G0 and triple name geocode WAITANGI-USAKOS-IWHR)
-
+For example, the point at the intersection the Equator and Greenwich is:
+    * (0.00000,0.00000) -> 7NFJIIDSBT -> EQU-NDOLA-ALAKH
+    
+While another location further away, say [178 Waitangi Wharf Owenga Road, Chatham Islands, New Zealand](https://geocode.xyz/178%20Waitangi%20Wharf%20Owenga%20Road,%20Chatham%20Islands,%20Ch%20%20New%20Zealand) is:
+    * (-43.95296,-176.54867) -> 8VEB9501G0 -> WAITANGI-USAKOS-IWHR
+    
 An alphanumeric geocode in most cases is half as long as its corresponding latitude,longitude and preserves all positional properties of the latitude,longitude pair. 
 
-||||||||||
--43.95296,-176.54867
-8VEB9501G0||||||||||
-
-Similarly, a Triple Name Geocode is composed of three existing geonames of length no more than 8 bytes, with the first geoname being the most promiment location name in its geographic proximity.
+    * ||||||||||
+    * -43.95296,-176.54867
+    * 8VEB9501G0||||||||||
 
 Alphanumeric Geocodes and Triple Name Geocode can not be shortened nor truncated because they are basically either a base 36 alphanumeric representation of a single number representing both latitude and longitude, or a base 146300 name alphabet encoding. 
 
@@ -77,8 +85,10 @@ Equivalent Geohashes are:
    * (44.99999,-64.36000) -> dxfpzryrzq 
    
 Although these points are only 1 meter apart. (see http://geohash.org/f840p2n2p3  and http://geohash.org/dxfpzryrzq )
-   
-A more detailed comparison to similar system is provided in the wiki.
+
+Triple Name Geocode solves what is widely perceived as a flaw with similar systems such as What3words, in that the first name is a geoname in close proximity to the point. This gives intuitive context to the association. 
+
+A more detailed comparison to similar systems with more examples is provided in the wiki.
 
 Example Code
 ------------
