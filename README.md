@@ -13,7 +13,7 @@ I agree with the commonly stated motivation that Latitude and Longitude are not 
 
 ## Intro
 
-Geocode is a one-dimensional location code. It uses a simple space-filling technique to map a two dimensional point (latitude,longitude) to either an alphanumeric string or a geoname triple with no loss of information. It is a one-to-one mapping (no two geocodes map to the same point and two points map to the same geocode).
+Geocode is a one-dimensional location code. It uses a simple space-filling technique to map a two dimensional point (latitude,longitude) to either an alphanumeric string or a geoname triple with no loss of information. It is a one-to-one mapping (no two geocodes map to the same point and no two points map to the same geocode).
 
 Geocode has several advantages over similar systems. 
 
