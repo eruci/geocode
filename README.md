@@ -60,7 +60,7 @@ The maximum is at the North Pole:
     
 These points are the computed minimum and maximum values for the Space-filling function I'm using.
 
-Every other location on earth will fall between these values.
+Every other location on earth will fall in between these values.
 
 For example, the point at the intersection the Equator and Greenwich is:
 
