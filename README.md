@@ -21,7 +21,7 @@ The alphanumeric geocode is short (10 bytes), has higher accuracy (up to 1 meter
 
 Triple geoname codes on the other hand are more memorizable, are intuitively reprentative of the location and are composed of relatively short existing geo names (up to 8 letters).
 
-The first name in a triple geoname code represents the most prominent location name inside a 21,403 km^2 area containing the point.
+The first name in a triple geoname code represents the most prominent location name inside a 21,403 km² area containing the point.
 
 For example,  34.05223,-118.24368 (a location in Los Angeles), is encoded to EKEAJ18E08 or as three geonames: LA-GASPAR-YANSI. Another location about 1 m away, say (34.05223,-118.24369), is EKEAJ18E1D or LA-GASPAR-HINGWEN.
 
@@ -77,7 +77,7 @@ The polygons are not squares, due to the a variation of the Z-order curve used t
 
 ![WAITANGI-USAKOS](https://raw.githubusercontent.com/eruci/geocode/master/waitangi-usakos.png)
 
-The smaller polygon (WAITANGI-USAKOS in this case) area is approx. 0.1463 km^2.
+The smaller polygon (WAITANGI-USAKOS in this case) area is approx. 0.1463 km².
 
 An alphanumeric geocode in most cases is half as long as its corresponding latitude,longitude and preserves all positional properties of the latitude,longitude pair in its unshortened 10-byte form. 
 
@@ -85,7 +85,7 @@ An alphanumeric geocode in most cases is half as long as its corresponding latit
     * -43.95296,-176.54867
     * 8VEB9501G0||||||||||
 
-Alphanumeric Geocodes and Triple Name Geocode represent points in their unshortened form, but if they are shortened they represent areas ranging from 21,403 km^2 (the first name in a triple name geocode) to 0.1463 km^2 (the first and second name in a triple name geocode). Alphanumeric Geocodes can be shortened too, but it does not make a lot of sense to do so. The first letter in an Alphanumeric Geocode accounts for 14.17 million km².
+Alphanumeric Geocodes and Triple Name Geocode represent points in their unshortened form, but if they are shortened they represent areas ranging from 21,403 km² (the first name in a triple name geocode) to 0.1463 km² (the first and second name in a triple name geocode). Alphanumeric Geocodes can be shortened too, but it does not make a lot of sense to do so. The first letter in an Alphanumeric Geocode accounts for 14.17 million km².
 
 Alphanumeric Geocodes/Triple Name Geocodes at borderline areas will share most of the significant bytes/geonames.
    * (45.00001,-64.36000) -> EHB105754C -> HALIFAX-GAZAH-DOMOU
