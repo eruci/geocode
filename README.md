@@ -1,5 +1,5 @@
 # GeoCode
-A open source Geolocation Code, mapping (latitude,longitude) to {(one alphanumeric number) or (three geonames)}.
+An open source Geolocation Code, mapping (latitude,longitude) to {(one alphanumeric number) or (three geonames)}.
 ==================
 
 
