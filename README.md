@@ -17,7 +17,7 @@ Geocode is a one-dimensional location code. It uses a simple space-filling techn
 
 Geocode has several advantages over similar systems. 
 
-The alphanumeric geocode is short (10 bytes), has higher accuracy (up to 1 meters) and avoids the borderline discontinuities of other one-dimensional location codes such as geohashes. 
+The alphanumeric geocode is short (10 bytes), has higher accuracy (up to 1 meters) and avoids the borderline discontinuities and many to one mappings of other one-dimensional location codes such as geohashes. 
 
 Triple geoname codes on the other hand are more memorizable, are intuitively reprentative of the location and are composed of relatively short existing geo names (up to 8 letters).
 
