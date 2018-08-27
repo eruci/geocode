@@ -70,6 +70,15 @@ While another location further away, say [178 Waitangi Wharf Owenga Road, Chatha
 
     * (-43.95296,-176.54867) -> 8VEB9501G0 -> WAITANGI-USAKOS-IWHR
     
+If a triple name geocode is shortened, it then represents an area.
+![WAITANGI](https://raw.githubusercontent.com/eruci/geocode/master/waitangi.png)
+
+The polygons are not squares, due to the Z-order curve used to represent the points.
+
+![WAITANGI-USAKOS](https://raw.githubusercontent.com/eruci/geocode/master/waitangi-usakos.png)
+
+The smaller polygon (WAITANGI-USAKOS in this case) area is approx. 0.1463 km^2.
+
 An alphanumeric geocode in most cases is half as long as its corresponding latitude,longitude and preserves all positional properties of the latitude,longitude pair. 
 
     * ||||||||||
