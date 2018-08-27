@@ -85,9 +85,9 @@ An alphanumeric geocode in most cases is half as long as its corresponding latit
     * -43.95296,-176.54867
     * 8VEB9501G0||||||||||
 
-Alphanumeric Geocodes and Triple Name Geocode can not be shortened nor truncated because they are basically either a base 36 alphanumeric representation of a single number representing both latitude and longitude, or a base 146300 name alphabet encoding. 
+Alphanumeric Geocodes and Triple Name Geocode represent points in their full form, but if they are shortened they represent areas ranging from 21,403 km^2 (the first name in a triple name geocode) to 0.1463 km^2 (the first and second name in a triple name geocode). 
 
-Alphanumeric Geocodes at borderline areas will share most of the significant bytes/geonames.
+Alphanumeric Geocodes/Triple Name Geocodes at borderline areas will share most of the significant bytes/geonames.
    * (45.00001,-64.36000) -> EHB105754C -> HALIFAX-GAZAH-DOMOU
    * (44.99999,-64.36000) -> EHB1056SH4 -> HALIFAX-GAZAH-NDITI
    
@@ -99,7 +99,7 @@ Equivalent Geohashes are:
    
 Although these points are only 1 meter apart. (see http://geohash.org/f840p2n2p3  and http://geohash.org/dxfpzryrzq )
 
-Triple Name Geocode solves what is widely perceived as a flaw with similar systems such as What3words, in that the first name is a geoname in close proximity to the point. This gives intuitive context to the association. 
+Triple Name Geocode also solves what is widely perceived as a flaw with similar systems such as What3words, in that the first name is a geoname in close proximity to the point. This gives intuitive context to the association. 
 
 A more detailed comparison to similar systems with more examples is provided in the [wiki](https://github.com/eruci/geocode/wiki/Comparison-to-similar-systems).
 
