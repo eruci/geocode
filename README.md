@@ -46,17 +46,17 @@ Links
 
 In depth description
 -----------
-A Geocode is a case insensitive string that comes in two forms: as a 10 byte long alpanumeric string or as 3 geonames separated by dashes. Let's call them Alphanumeric Geocodes or Triple Name Geocodes.
+A Geocode is a case insensitive string that comes in three forms: as a 10 byte long alpanumeric string or as 3 geonames separated by dashes or as a hybrid code composed of one geoname and a string. Let's call them Alphanumeric Geocodes or Triple Name Geocodes or Hybrid Geocodes.
 
 An alphanumeric geocode has length of 10 bytes for any location on Earth, with locations that are far having very distinct geocodes, while those that are near sharing most significant digits/names. 
 
 The minimum value for a GeoCode is in the South Pole:
 
-    * (-90.00000,-154.23359) -> 1000000000 -> SOUTH-NOALA-MONETTE
+    * [-90.00000,-154.23359](https://3geonames.org/-90.00000,-154.23359) -> 1000000000 -> SOUTH-NOALA-MONETTE -> SOUTH-9KUBWJK
     
 The maximum is at the North Pole:
 
-    * (90.00000,23.14496) -> UTRC9O4N8P -> NORTH-BUOF-SCHONGAU
+    * [90.00000,23.14496](https://3geonames.org/90.00000,23.14496) -> UTRC9O4N8P -> NORTH-BUOF-SCHONGAU -> NORTH-6K9GURD
     
 These points are the computed minimum and maximum values for the Space-filling function I'm using.
 
