@@ -64,13 +64,13 @@ Every other location on earth will fall in between these values.
 
 For example, the point at the intersection the Equator and Greenwich is:
 
-    * (0.00000,0.00000) -> 7NFJIIDSBT -> EQU-NDOLA-ALAKH
+   [0.00000,0.00000](https://3geonames.org/0.00000,0.00000) -> 7NFJIIDSBT -> EQU-NDOLA-ALAKH -> EQU-2AT2YT5
     
 While another location further away, say [178 Waitangi Wharf Owenga Road, Chatham Islands, New Zealand](https://geocode.xyz/178%20Waitangi%20Wharf%20Owenga%20Road,%20Chatham%20Islands,%20Ch%20%20New%20Zealand) is:
 
-    * (-43.95296,-176.54867) -> 8VEB9501G0 -> WAITANGI-USAKOS-IWHR
+   [-43.95296,-176.54867](https://3geonames.org/-43.95296,-176.54867) -> 8VEB9501G0 -> WAITANGI-USAKOS-IWHR -> WAITANGI-1FI7H9S
     
-A triple name geocode can be shortened to represent an area.
+A triple name geocode or a hybrid geocode can be shortened to represent an area.
 ![WAITANGI](https://raw.githubusercontent.com/eruci/geocode/master/waitangi.png)
 
 The polygons are not squares, due to the a variation of the Z-order curve used to represent the points.
@@ -100,6 +100,19 @@ Equivalent Geohashes are:
 Although these points are only 1 meter apart. (see http://geohash.org/f840p2n2p3  and http://geohash.org/dxfpzryrzq )
 
 Triple Name Geocode also solves what is widely perceived as a flaw with similar systems such as What3words, in that the first name is a geoname in close proximity to the point. This gives intuitive context to the association. 
+
+In some cases a Hybrid Geocode is more readable, with the first geoname representing the general area the point is in.
+
+Here are all the Geocodes around the point above. 
+Triple Geoname	Alphanumeric	Hybrid
+HALIFAX-GAZAH-MOUFA	EHB1057549	HALIFAX-6UMXPAH
+HALIFAX-GAZAH-DOLAM	EHB105754D	HALIFAX-6UMXPAL
+HALIFAX-GAZAH-URSS	EHB105754L	HALIFAX-6UMXPAT
+HALIFAX-GAZAH-NAITA	EHB1056WOW	HALIFAX-6UMXGV4
+HALIFAX-GAZAH-KUMON	EHB105754G	HALIFAX-6UMXPAO
+HALIFAX-GAZAH-IGNYANDA	EHB105754H	HALIFAX-6UMXPAP
+HALIFAX-GAZAH-GOGMI	EHB105754K	HALIFAX-6UMXPAS
+HALIFAX-GAZAH-SENHA	EHB10570WK	HALIFAX-6UMXL2S
 
 A more detailed comparison to similar systems with more examples is provided in the [wiki](https://github.com/eruci/geocode/wiki/Comparison-to-similar-systems).
 
