@@ -105,20 +105,16 @@ In some cases a Hybrid Geocode is more readable, with the first geoname represen
 
 Here are all the Geocodes around the point above. 
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-
-Triple Geoname	Alphanumeric	Hybrid
-HALIFAX-GAZAH-MOUFA	EHB1057549	HALIFAX-6UMXPAH
-HALIFAX-GAZAH-DOLAM	EHB105754D	HALIFAX-6UMXPAL
-HALIFAX-GAZAH-URSS	EHB105754L	HALIFAX-6UMXPAT
-HALIFAX-GAZAH-NAITA	EHB1056WOW	HALIFAX-6UMXGV4
-HALIFAX-GAZAH-KUMON	EHB105754G	HALIFAX-6UMXPAO
-HALIFAX-GAZAH-IGNYANDA	EHB105754H	HALIFAX-6UMXPAP
-HALIFAX-GAZAH-GOGMI	EHB105754K	HALIFAX-6UMXPAS
-HALIFAX-GAZAH-SENHA	EHB10570WK	HALIFAX-6UMXL2S
+| Triple Geoname  | Alphanumeric | Hybrid |
+| ------------- | ------------- | ------------- |
+| HALIFAX-GAZAH-MOUFA  | EHB1057549  | HALIFAX-6UMXPAL  |
+| HALIFAX-GAZAH-DOLAM  | EHB105754D  | HALIFAX-6UMXPAL  |
+| HALIFAX-GAZAH-URSS	| EHB105754L	| HALIFAX-6UMXPAT    |
+| HALIFAX-GAZAH-NAITA	| EHB1056WOW	| HALIFAX-6UMXGV4 |
+| HALIFAX-GAZAH-KUMON	| EHB105754G	| HALIFAX-6UMXPAO |
+| HALIFAX-GAZAH-IGNYANDA	| EHB105754H	| HALIFAX-6UMXPAP |
+| HALIFAX-GAZAH-GOGMI	| EHB105754K	| HALIFAX-6UMXPAS |
+| HALIFAX-GAZAH-SENHA	| EHB10570WK	| HALIFAX-6UMXL2S |
 
 A more detailed comparison to similar systems with more examples is provided in the [wiki](https://github.com/eruci/geocode/wiki/Comparison-to-similar-systems).
 
