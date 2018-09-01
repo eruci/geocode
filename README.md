@@ -104,6 +104,12 @@ Triple Name Geocode also solves what is widely perceived as a flaw with similar 
 In some cases a Hybrid Geocode is more readable, with the first geoname representing the general area the point is in.
 
 Here are all the Geocodes around the point above. 
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+
 Triple Geoname	Alphanumeric	Hybrid
 HALIFAX-GAZAH-MOUFA	EHB1057549	HALIFAX-6UMXPAH
 HALIFAX-GAZAH-DOLAM	EHB105754D	HALIFAX-6UMXPAL
