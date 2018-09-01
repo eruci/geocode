@@ -52,11 +52,11 @@ An alphanumeric geocode has length of 10 bytes for any location on Earth, with l
 
 The minimum value for a GeoCode is in the South Pole:
 
-    * [-90.00000,-154.23359](https://3geonames.org/-90.00000,-154.23359) -> 1000000000 -> SOUTH-NOALA-MONETTE -> SOUTH-9KUBWJK
+   [-90.00000,-154.23359](https://3geonames.org/-90.00000,-154.23359) -> 1000000000 -> SOUTH-NOALA-MONETTE -> SOUTH-9KUBWJK
     
 The maximum is at the North Pole:
 
-    * [90.00000,23.14496](https://3geonames.org/90.00000,23.14496) -> UTRC9O4N8P -> NORTH-BUOF-SCHONGAU -> NORTH-6K9GURD
+   [90.00000,23.14496](https://3geonames.org/90.00000,23.14496) -> UTRC9O4N8P -> NORTH-BUOF-SCHONGAU -> NORTH-6K9GURD
     
 These points are the computed minimum and maximum values for the Space-filling function I'm using.
 
