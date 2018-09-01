@@ -23,7 +23,7 @@ Triple geoname codes on the other hand are more memorizable, are intuitively rep
 
 The first name in a triple geoname code represents the most prominent location name inside a 21,403 km² area containing the point.
 
-For example,  34.05223,-118.24368 (a location in Los Angeles), is encoded to EKEAJ18E08 or as three geonames: LA-GASPAR-YANSI. Another location about 1 m away, say (34.05223,-118.24369), is EKEAJ18E1D or LA-GASPAR-HINGWEN.
+For example,  [34.05223,-118.24368](https://3geonames.org/34.05223,-118.24368) (a location in Los Angeles), is encoded to [EKEAJ18E08](https://3geonames.org/EKEAJ18E08) or as three geonames: [LA-GASPAR-YANSI](https://3geonames.org/LA-GASPAR-YANSI) or as a hybrid code [LA-MJKQH4](https://3geonames.org/LA-MJKQH4). Another location about 1 m away, say (34.05223,-118.24369), is EKEAJ18E1D or LA-GASPAR-HINGWEN or LA-MJKQI9.
 
 The human readable algorithm uses 146300 geonames from http://geonames.org and http://geonames.nga.mil/gns/html/gis_countryfiles.html with several requirements for the names (chosen to be recognizable, short, easy to pronounce, distinct from each other and evenly spread throughout the earth.) We also shorten geonames to their acronyms whenever possible (LA -> Los Angeles, NY -> New York, etc)
 
