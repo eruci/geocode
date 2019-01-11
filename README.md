@@ -107,7 +107,7 @@ Here are all the Geocodes around the point above.
 
 | Triple Geoname  | Alphanumeric | Hybrid |
 | ------------- | ------------- | ------------- |
-| HALIFAX-GAZAH-MOUFA  | EHB1057549  | HALIFAX-6UMXPAL  |
+| HALIFAX-GAZAH-MOUFA  | EHB1057549  | HALIFAX-6UMXPAH  |
 | HALIFAX-GAZAH-DOLAM  | EHB105754D  | HALIFAX-6UMXPAL  |
 | HALIFAX-GAZAH-URSS	| EHB105754L	| HALIFAX-6UMXPAT    |
 | HALIFAX-GAZAH-NAITA	| EHB1056WOW	| HALIFAX-6UMXGV4 |
