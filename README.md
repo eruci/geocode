@@ -2,7 +2,7 @@
 An open source Geolocation Code, mapping (latitude,longitude) to {(one alphanumeric number) or (three geonames)}.
 ==================
 
-[Demo](https://3geonames.org/): https://3geonames.org/
+[Demo](https://3geonames.org/): https://3geonames.org/ : [CPAN](https://metacpan.org/pod/Geo::Code): https://metacpan.org/pod/Geo::Code 
 
 ## Abstract
 
