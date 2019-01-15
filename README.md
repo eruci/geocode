@@ -82,6 +82,9 @@ The smaller polygon (WAITANGI-USAKOS in this case) area is approx. 0.1463 km².
 The shape of the polygon varies by place. 
 ![BRUSSELS](https://raw.githubusercontent.com/eruci/geocode/master/brussels.png)
 
+This is a smaller polygon corresponding to BRUSSELS-AAX-{*}
+![BRUSSELS-AAX](https://raw.githubusercontent.com/eruci/geocode/master/brussels-aax.png)
+
 An alphanumeric geocode in most cases is half as long as its corresponding latitude,longitude and preserves all positional properties of the latitude,longitude pair in its unshortened 10-byte form. 
 
     * ||||||||||
