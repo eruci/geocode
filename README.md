@@ -112,13 +112,21 @@ In some cases a Hybrid Geocode is more readable, with the first geoname represen
 Here are all the Geocodes around the point above. (Wolfville is a synonym, while the main area name is Halifax, corresponding to the most prominent location name in the vicinity)
 
 Triple Geoname	Alphanumeric	Hybrid
+
 HALIFAX-SOLOMON-CELS	EHB1056WOT	HALIFAX-6UMXGV1
+
 HALIFAX-SOLOMON-ENISEYSK	EHB1057549	HALIFAX-6UMXPAH
+
 HALIFAX-SOLOMON-CEQA	EHB1056WOW	HALIFAX-6UMXGV4
+
 HALIFAX-SOLOMON-MAILPIECE	EHB1056SH0	HALIFAX-6UMXCN8
+
 HALIFAX-SOLOMON-MAILTOOLS	EHB1056SH1	HALIFAX-6UMXCN9
+
 HALIFAX-SOLOMON-CALPE	EHB10570WH	HALIFAX-6UMXL2P
+
 HALIFAX-SOLOMON-MAHOVLICH	EHB1056SGW	HALIFAX-6UMXCN4
+
 HALIFAX-SOLOMON-DOSBO	EHB10570WK	HALIFAX-6UMXL2S
 
 Related links	
