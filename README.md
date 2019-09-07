@@ -129,7 +129,8 @@ HALIFAX-SOLOMON-MAHOVLICH	EHB1056SGW	HALIFAX-6UMXCN4
 
 HALIFAX-SOLOMON-DOSBO	EHB10570WK	HALIFAX-6UMXL2S
 
-Related links	
+Related links	:
+
 https://fosdem.org/2019/schedule/event/geo_3geonames/
 
 https://3geonames.org/riga.html
